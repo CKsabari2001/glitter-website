@@ -1,0 +1,105 @@
+@use "./abstracts/colors" as *;
+@use "./abstracts/breakpoints" as *;
+
+// Home Banner Section
+.home-banner {
+  background-color: $bg-color-primary;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.slider-item {
+  margin: 20px;
+  img {
+    max-width: 90%;
+    max-height: 170px;
+    padding: 0;
+  }
+
+  @media (min-width: 900px) and (max-width: 1400px) {
+    img {
+      max-width: 80%;
+    }
+  }
+
+  .extra-large {
+    max-height: 220px;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+@media (max-width: 899px) {
+  .slick-track {
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+// Shapes
+.square-20 {
+  border-radius: 30px;
+}
+.square-30 {
+  border-radius: 60px;
+}
+.square-top-90 {
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+}
+.square-top-40 {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+.square-top-botton-80 {
+  border-radius: 100px;
+}
+.round {
+  border-radius: 100%;
+}
+.square-40 {
+  border-radius: 45px;
+}
+
+// Destinations List Section
+.destinations-list {
+  .destinations-list-img {
+    max-width: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+  }
+
+  .destinations-list-item {
+    :hover .destinations-list-title {
+      color: #ffc107;
+    }
+  }
+}
+
+// Crafting Memories
+.crafting-memories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $bg-color-primary;
+
+  .crafting-memories-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+
+    @media (min-width: 500px) and (max-width: 1200px) {
+      max-width: 50%;
+    }
+  }
+}

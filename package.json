@@ -7,11 +7,21 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sass-dev": "sass --watch --update --style=expanded src/assets/scss/main.scss:src/assets/css/main.css",
+    "sass-prod": "sass --no-source-map --style=compressed src/assets/scss/main.scss:src/assets/css/main.css"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.11",
+    "@mui/material": "^5.15.11",
+    "@types/react-slick": "^0.23.13",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.2",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
