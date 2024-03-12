@@ -1,5 +1,3 @@
-import React from "react";
-
 // Mui
 import { Box, Grid, useMediaQuery, Typography } from "@mui/material";
 

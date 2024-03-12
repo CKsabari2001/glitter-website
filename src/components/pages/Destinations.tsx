@@ -1,5 +1,3 @@
-import React from "react";
-
 // React Component
 import Header from "../header/Header";
 import EpicAdventure from "../pages/destinations/EpicAdventure";
