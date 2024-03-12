@@ -1,22 +1,8 @@
-import { CSSProperties } from "react";
-
 // MUI
-import { Grid, Box, Stack, useMediaQuery } from "@mui/material";
-// import InstagramIcon from "@mui/icons-material/Instagram";
-// import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-// import YouTubeIcon from "@mui/icons-material/YouTube";
-// import TwitterIcon from "@mui/icons-material/Twitter";
-
-// // Styled MUI
-// import { CustomTypP } from "../styled/Styled";
+import { Grid, useMediaQuery } from "@mui/material";
 
 function HomeFooterImg() {
-  const xs = useMediaQuery("(min-width:0px)");
-  const sm = useMediaQuery("(min-width:600px)");
-  const md = useMediaQuery("(min-width:900px)");
   const lg = useMediaQuery("(min-width:1200px)");
-  // const xl = useMediaQuery("(min-width:1536px)");
-  const xxl = useMediaQuery("(min-width:1800px)");
 
   return (
     <>
