@@ -1,8 +1,10 @@
 // React Component
-import Header from "../Header";
+import Header from "../header/Header";
+import Footer from "../footer/Footer";
 import HomeBanner from "./home/HomeBanner";
 import DestinationsList from "./common/DestinationsList";
-import CraftingMemories from "./common/CraftingMemories";
+import CraftingMemories from "./home/CraftingMemories";
+import Testimonial from "./common/Testimonial";
 function Home() {
   return (
     <>
@@ -10,6 +12,8 @@ function Home() {
       <HomeBanner />
       <DestinationsList />
       <CraftingMemories />
+      <Testimonial />
+      <Footer isHomePage />
     </>
   );
 }

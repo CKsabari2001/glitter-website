@@ -1,7 +1,7 @@
 import React from "react";
 
 // React Component
-import Header from "../Header";
+import Header from "../header/Header";
 function ContactUs() {
   return (
     <>

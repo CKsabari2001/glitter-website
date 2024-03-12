@@ -103,3 +103,22 @@
     }
   }
 }
+
+// Testimonials Section
+.testimonials-slider-container {
+  margin-top: 3rem;
+
+  @media (min-width: 900px) {
+    margin-top: 5rem;
+  }
+}
+.testimonial-container {
+  border: 3px dashed $bg-color-secondary !important;
+  border-radius: 15px;
+
+  .testimonial-card {
+    background-color: $bg-color-primary !important;
+    box-shadow: none !important;
+    border-radius: 15px !important;
+  }
+}

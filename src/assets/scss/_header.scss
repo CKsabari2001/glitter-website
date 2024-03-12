@@ -125,3 +125,15 @@
 .nav-open {
   display: flex;
 }
+
+.nav-bar {
+  a.active {
+    color: $text-color-highlight;
+  }
+}
+
+.mobile-menu {
+  a.active {
+    color: $text-color-highlight;
+  }
+}

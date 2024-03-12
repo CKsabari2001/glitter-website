@@ -1,12 +1,19 @@
-import React from "react";
-
 // React Component
-import Header from "../Header";
+import Header from "../header/Header";
+import EpicAdventure from "./aboutUs/CmEpicAdventure";
+import CraftingMemoriesJourney from "./aboutUs/CraftingMemoriesJourney";
+import FindDestinations from "./common/FindDestinations";
+import Testimonial from "../pages/common/Testimonial";
+import Footer from "../footer/Footer";
 function AboutUs() {
   return (
     <>
       <Header />
-      <h2>About Us Page Content</h2>
+      <EpicAdventure />
+      <CraftingMemoriesJourney />
+      <FindDestinations />
+      <Testimonial />
+      <Footer isHomePage={false} />
     </>
   );
 }

@@ -1,0 +1,64 @@
+@use "./abstracts/colors.scss" as *;
+
+.footer-container {
+  // background-color: $bg-color-secondary;
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+  position: relative;
+
+  .social-icons {
+    justify-content: center;
+
+    a span {
+      background-color: $bg-color-primary;
+
+      svg {
+        fill: $bg-color-secondary;
+        font-size: 50px;
+      }
+    }
+  }
+
+  p span {
+    color: $text-color-highlight;
+  }
+  .footer-link {
+    text-decoration: none;
+    color: $text-color-secondary;
+
+    &:hover {
+      color: $text-color-highlight;
+    }
+  }
+}
+
+.footer-bottom {
+  background-color: $bg-color-primary;
+  padding: 1rem 0;
+}
+
+.footer-log {
+  width: 150px;
+}
+
+.homefooter-img-container {
+  position: absolute;
+  bottom: 60%;
+
+  @media (min-width: 600px) {
+    bottom: 80%;
+  }
+  @media (min-width: 900px) {
+    bottom: 75%;
+  }
+  @media (min-width: 1200px) {
+    bottom: 70%;
+  }
+  @media (min-width: 1536px) {
+    bottom: 65%;
+  }
+
+  img {
+    width: 100%;
+  }
+}

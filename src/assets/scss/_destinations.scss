@@ -1,0 +1,298 @@
+@use "./abstracts/breakpoints.scss" as *;
+@use "./abstracts/colors" as *;
+
+// Destination first section - Epic Adventure Slider
+.epic-adventure-slider {
+  margin-top: 50px;
+  margin-bottom: 120px;
+
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
+  .epic-adventure-slider-item {
+    .slider-img {
+      padding-bottom: 30px;
+      max-width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      &:hover {
+        cursor: grab;
+      }
+    }
+  }
+
+  @media (min-width: 900px) {
+    .slick-slide > div {
+      margin: 0 20px;
+    }
+    .slick-list {
+      margin: 0 -10px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .slick-slide > div {
+      margin: 0 50px;
+    }
+    .slick-list {
+      margin: 0 -10px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .slick-slide > div {
+      margin: 0 80px;
+    }
+  }
+  @media (min-width: 1600px) {
+    .slick-slide > div {
+      margin: 0 100px;
+    }
+  }
+
+  .slick-dots {
+    bottom: -50px;
+
+    li {
+      margin: 0 5px;
+    }
+
+    li.slick-active button::before {
+      color: $bg-color-secondary;
+      opacity: 1;
+    }
+
+    li button::before {
+      font-size: 13px;
+      color: #d9d9d9;
+      opacity: 0.5;
+    }
+
+    li button:hover {
+      opacity: 1;
+    }
+
+    @media (min-width: 900px) {
+      bottom: -70px;
+
+      li {
+        margin: 0 10px;
+      }
+
+      li button::before {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+// destinations Search
+.destinations-search {
+  .destinations-search-container {
+    background-color: $bg-color-primary;
+    padding: 50px 0;
+
+    @media (min-width: 900px) {
+      border-top-right-radius: 100px;
+      border-bottom-left-radius: 100px;
+    }
+  }
+  #destination-search {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 16px;
+    padding: 15px 12px;
+    border: none;
+    outline: none;
+    font-family: "Noto Sans", sans-serif;
+
+    ::placeholder {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 16px;
+    }
+
+    @media (min-width: 900px) {
+      font-size: 20px;
+
+      ::placeholder {
+        font-size: 20px;
+      }
+    }
+    @media (min-width: 1200px) {
+      margin-top: 0px;
+    }
+  }
+
+  .destination-search-btn {
+    margin-top: 20px;
+    padding: 15px 50px;
+    font-size: 16px;
+    font-family: "Merriweather", serif;
+    border: 0;
+    color: #ffffff;
+    background-color: $bg-color-secondary;
+
+    &:hover {
+      background-color: $text-color-highlight;
+      cursor: pointer;
+    }
+
+    @media (min-width: 600px) {
+      margin-top: 30px;
+    }
+    @media (min-width: 900px) {
+      font-size: 20px;
+    }
+    @media (min-width: 1200px) {
+      margin-top: 0px;
+    }
+  }
+}
+
+// Types of places section
+.places-type-section {
+  .places-type-item {
+    &::after {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Merriweather", serif;
+      font-weight: 700;
+      color: #ffffff;
+      font-size: 22px;
+      top: 0;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+      border-radius: 15px;
+
+      @media (min-width: 900px) {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .places-type-item {
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+  }
+}
+
+// Wonders of Worlds Sections
+.wonders-of-worlds-container {
+  img {
+    width: 100%;
+  }
+}
+
+// Process way Section
+.process-way-section {
+  background-color: $bg-color-primary;
+  justify-content: center;
+
+  .process-way-list img {
+    width: 100%;
+  }
+
+  .process-way-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px 0;
+
+    .slick-slide > div {
+      margin: 0 10px;
+    }
+    .slick-list {
+      margin: 0 -10px;
+    }
+
+    @media (min-width: 450px) {
+      .slick-slide > div {
+        margin: 0 60px;
+      }
+    }
+
+    @media (min-width: 600px) {
+      .slick-slide > div {
+        margin: 0 20px;
+      }
+    }
+
+    @media (min-width: 900px) {
+      .slick-slide > div {
+        margin: 0 50px;
+      }
+    }
+
+    @media (min-width: 1400px) {
+      .slick-slide > div {
+        margin: 0 100px;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+}
+
+.slider-item-container {
+  position: relative;
+
+  .content {
+    position: absolute;
+    background-color: rgba(255, 193, 7, 0.5);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 60%;
+
+    @media (min-width: 400px) {
+      top: 70%;
+    }
+
+    @media (min-width: 600px) {
+      top: 50%;
+    }
+
+    @media (min-width: 800px) {
+      top: 70%;
+    }
+
+    @media (min-width: 1400px) {
+      top: 60%;
+    }
+
+    @media (min-width: 1600px) {
+      top: 70%;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+.crafting-memories-journey-section {
+  img {
+    width: 100%;
+  }
+}
