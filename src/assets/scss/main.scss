@@ -1,0 +1,25 @@
+// Use
+@use "./abstracts/breakpoints.scss" as *;
+
+// Imports
+@import "./header.scss";
+@import "./footer.scss";
+@import "./home.scss";
+@import "./destinations.scss";
+
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+// Global Styles
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  @include break-points(md) {
+    font-size: 18px;
+  }
+}

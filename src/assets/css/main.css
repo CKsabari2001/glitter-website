@@ -1,0 +1,585 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+.nav-top {
+  display: flex;
+  justify-content: end;
+  background-color: #fff8e1;
+  padding: 0.5rem 1.5rem;
+}
+
+.social-icons span {
+  background-color: #215732;
+  border-radius: 100%;
+  padding: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-icons span svg {
+  color: #fff8e1;
+  font-size: 16px;
+}
+@media (min-width: 900px) {
+  .social-icons span svg {
+    font-size: 18px;
+  }
+}
+.social-icons .filled-icon {
+  color: #215732;
+}
+
+.pc-menu {
+  display: none;
+}
+.pc-menu .menu-list a {
+  padding-left: 10px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+}
+.pc-menu .menu-list a:hover {
+  color: #ffc107;
+}
+@media (min-width: 900px) {
+  .pc-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .pc-menu .menu-list a {
+    padding-left: 30px;
+  }
+}
+
+.mobile-menu {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.mobile-menu .menu-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobile-menu .menu-list ul {
+  width: 100%;
+}
+.mobile-menu .menu-list span {
+  text-align: center;
+  color: #202020;
+}
+.mobile-menu .menu-list span:hover {
+  color: #ffc107;
+}
+.mobile-menu .menu-list a {
+  text-align: center;
+  width: 100%;
+  text-decoration: none;
+  color: #202020;
+}
+.mobile-menu .menu-list a:hover {
+  color: #ffc107;
+}
+.mobile-menu .close-icon {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+.mobile-menu .close-icon:hover {
+  cursor: pointer;
+}
+
+.menu-logo {
+  max-width: 100px;
+}
+@media (min-width: 900px) {
+  .menu-logo {
+    max-width: 120px;
+  }
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-open {
+  display: flex;
+}
+
+.nav-bar a.active {
+  color: #ffc107;
+}
+
+.mobile-menu a.active {
+  color: #ffc107;
+}
+
+.footer-container {
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+  position: relative;
+}
+.footer-container .social-icons {
+  justify-content: center;
+}
+.footer-container .social-icons a span {
+  background-color: #fff8e1;
+}
+.footer-container .social-icons a span svg {
+  fill: #215732;
+  font-size: 50px;
+}
+.footer-container p span {
+  color: #ffc107;
+}
+.footer-container .footer-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-container .footer-link:hover {
+  color: #ffc107;
+}
+
+.footer-bottom {
+  background-color: #fff8e1;
+  padding: 1rem 0;
+}
+
+.footer-log {
+  width: 150px;
+}
+
+.homefooter-img-container {
+  position: absolute;
+  bottom: 60%;
+}
+@media (min-width: 600px) {
+  .homefooter-img-container {
+    bottom: 80%;
+  }
+}
+@media (min-width: 900px) {
+  .homefooter-img-container {
+    bottom: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .homefooter-img-container {
+    bottom: 70%;
+  }
+}
+@media (min-width: 1536px) {
+  .homefooter-img-container {
+    bottom: 65%;
+  }
+}
+.homefooter-img-container img {
+  width: 100%;
+}
+
+.home-banner {
+  background-color: #fff8e1;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.slider-item {
+  margin: 20px;
+}
+.slider-item img {
+  max-width: 90%;
+  max-height: 170px;
+  padding: 0;
+}
+@media (min-width: 900px) and (max-width: 1400px) {
+  .slider-item img {
+    max-width: 80%;
+  }
+}
+.slider-item .extra-large {
+  max-height: 220px;
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+@media (max-width: 899px) {
+  .slick-track {
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+.square-20 {
+  border-radius: 30px;
+}
+
+.square-30 {
+  border-radius: 60px;
+}
+
+.square-top-90 {
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+}
+
+.square-top-40 {
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.square-top-botton-80 {
+  border-radius: 100px;
+}
+
+.round {
+  border-radius: 100%;
+}
+
+.square-40 {
+  border-radius: 45px;
+}
+
+.destinations-list .destinations-list-img {
+  max-width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.destinations-list .destinations-list-img:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.destinations-list .destinations-list-item :hover .destinations-list-title {
+  color: #ffc107;
+}
+
+.crafting-memories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff8e1;
+}
+.crafting-memories .crafting-memories-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+}
+@media (min-width: 500px) and (max-width: 1200px) {
+  .crafting-memories .crafting-memories-img {
+    max-width: 50%;
+  }
+}
+
+.testimonials-slider-container {
+  margin-top: 3rem;
+}
+@media (min-width: 900px) {
+  .testimonials-slider-container {
+    margin-top: 5rem;
+  }
+}
+
+.testimonial-container {
+  border: 3px dashed #215732 !important;
+  border-radius: 15px;
+}
+.testimonial-container .testimonial-card {
+  background-color: #fff8e1 !important;
+  box-shadow: none !important;
+  border-radius: 15px !important;
+}
+
+.epic-adventure-slider {
+  margin-top: 50px;
+  margin-bottom: 120px;
+}
+.epic-adventure-slider .slick-slide > div {
+  margin: 0 10px;
+}
+.epic-adventure-slider .slick-list {
+  margin: 0 -10px;
+}
+.epic-adventure-slider .epic-adventure-slider-item .slider-img {
+  padding-bottom: 30px;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.epic-adventure-slider .epic-adventure-slider-item .slider-img:hover {
+  cursor: grab;
+}
+@media (min-width: 900px) {
+  .epic-adventure-slider .slick-slide > div {
+    margin: 0 20px;
+  }
+  .epic-adventure-slider .slick-list {
+    margin: 0 -10px;
+  }
+}
+@media (min-width: 1200px) {
+  .epic-adventure-slider .slick-slide > div {
+    margin: 0 50px;
+  }
+  .epic-adventure-slider .slick-list {
+    margin: 0 -10px;
+  }
+}
+@media (min-width: 1400px) {
+  .epic-adventure-slider .slick-slide > div {
+    margin: 0 80px;
+  }
+}
+@media (min-width: 1600px) {
+  .epic-adventure-slider .slick-slide > div {
+    margin: 0 100px;
+  }
+}
+.epic-adventure-slider .slick-dots {
+  bottom: -50px;
+}
+.epic-adventure-slider .slick-dots li {
+  margin: 0 5px;
+}
+.epic-adventure-slider .slick-dots li.slick-active button::before {
+  color: #215732;
+  opacity: 1;
+}
+.epic-adventure-slider .slick-dots li button::before {
+  font-size: 13px;
+  color: #d9d9d9;
+  opacity: 0.5;
+}
+.epic-adventure-slider .slick-dots li button:hover {
+  opacity: 1;
+}
+@media (min-width: 900px) {
+  .epic-adventure-slider .slick-dots {
+    bottom: -70px;
+  }
+  .epic-adventure-slider .slick-dots li {
+    margin: 0 10px;
+  }
+  .epic-adventure-slider .slick-dots li button::before {
+    font-size: 25px;
+  }
+}
+
+.destinations-search .destinations-search-container {
+  background-color: #fff8e1;
+  padding: 50px 0;
+}
+@media (min-width: 900px) {
+  .destinations-search .destinations-search-container {
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+  }
+}
+.destinations-search #destination-search {
+  margin-top: 30px;
+  width: 100%;
+  font-size: 16px;
+  padding: 15px 12px;
+  border: none;
+  outline: none;
+  font-family: "Noto Sans", sans-serif;
+}
+.destinations-search #destination-search ::placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+}
+@media (min-width: 900px) {
+  .destinations-search #destination-search {
+    font-size: 20px;
+  }
+  .destinations-search #destination-search ::placeholder {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .destinations-search #destination-search {
+    margin-top: 0px;
+  }
+}
+.destinations-search .destination-search-btn {
+  margin-top: 20px;
+  padding: 15px 50px;
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  border: 0;
+  color: #ffffff;
+  background-color: #215732;
+}
+.destinations-search .destination-search-btn:hover {
+  background-color: #ffc107;
+  cursor: pointer;
+}
+@media (min-width: 600px) {
+  .destinations-search .destination-search-btn {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 900px) {
+  .destinations-search .destination-search-btn {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .destinations-search .destination-search-btn {
+    margin-top: 0px;
+  }
+}
+
+.places-type-section .places-type-item::after {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 22px;
+  top: 0;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  border-radius: 15px;
+}
+@media (min-width: 900px) {
+  .places-type-section .places-type-item::after {
+    font-size: 28px;
+  }
+}
+.places-type-section .places-type-item {
+  position: relative;
+}
+.places-type-section .places-type-item:hover {
+  cursor: pointer;
+}
+.places-type-section img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.wonders-of-worlds-container img {
+  width: 100%;
+}
+
+.process-way-section {
+  background-color: #fff8e1;
+  justify-content: center;
+}
+.process-way-section .process-way-list img {
+  width: 100%;
+}
+.process-way-section .process-way-slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 0;
+}
+.process-way-section .process-way-slider .slick-slide > div {
+  margin: 0 10px;
+}
+.process-way-section .process-way-slider .slick-list {
+  margin: 0 -10px;
+}
+@media (min-width: 450px) {
+  .process-way-section .process-way-slider .slick-slide > div {
+    margin: 0 60px;
+  }
+}
+@media (min-width: 600px) {
+  .process-way-section .process-way-slider .slick-slide > div {
+    margin: 0 20px;
+  }
+}
+@media (min-width: 900px) {
+  .process-way-section .process-way-slider .slick-slide > div {
+    margin: 0 50px;
+  }
+}
+@media (min-width: 1400px) {
+  .process-way-section .process-way-slider .slick-slide > div {
+    margin: 0 100px;
+  }
+}
+.process-way-section .process-way-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-item-container {
+  position: relative;
+}
+.slider-item-container .content {
+  position: absolute;
+  background-color: rgba(255, 193, 7, 0.5);
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+}
+@media (min-width: 400px) {
+  .slider-item-container .content {
+    top: 70%;
+  }
+}
+@media (min-width: 600px) {
+  .slider-item-container .content {
+    top: 50%;
+  }
+}
+@media (min-width: 800px) {
+  .slider-item-container .content {
+    top: 70%;
+  }
+}
+@media (min-width: 1400px) {
+  .slider-item-container .content {
+    top: 60%;
+  }
+}
+@media (min-width: 1600px) {
+  .slider-item-container .content {
+    top: 70%;
+  }
+}
+
+.crafting-memories-journey-section img {
+  width: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+@media (min-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
