@@ -1,8 +1,5 @@
 import { useMediaQuery } from "@mui/material";
-import React from "react";
-
 function ContactMap() {
-  const sm = useMediaQuery("(min-width:500px)");
   const md = useMediaQuery("(min-width:900px)");
   const lg = useMediaQuery("(min-width:1200px)");
 
