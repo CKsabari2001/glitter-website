@@ -568,6 +568,66 @@
   width: 100%;
 }
 
+.contact-us-banner {
+  width: 100%;
+}
+
+.contact-us-form-container .input-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.contact-us-form-container .input-container label {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  left: 15px;
+  padding: 0 5px;
+  background-color: white;
+  color: #215732;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+}
+.contact-us-form-container .input-container img {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+.contact-us-form-container input {
+  display: inline;
+  width: 100%;
+  border: 2px solid #215732;
+  padding: 25px 5px;
+  padding-left: 50px;
+  border-radius: 5px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  flex-grow: 1;
+  color: #202020;
+}
+.contact-us-form-container input:active {
+  outline: none;
+}
+.contact-us-form-container input:focus {
+  outline: none;
+}
+.contact-us-form-container input::placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  color: rgba(32, 32, 32, 0.8);
+}
+@media (min-width: 900px) {
+  .contact-us-form-container input {
+    font-size: 20px;
+  }
+  .contact-us-form-container input::placeholder {
+    font-size: 18px;
+  }
+}
+
 body {
   padding: 0;
   margin: 0;

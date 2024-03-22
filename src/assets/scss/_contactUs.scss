@@ -1,0 +1,72 @@
+// Use
+@use "./abstracts/breakpoints.scss" as *;
+@use "./abstracts/colors" as *;
+
+// Custom Css
+
+.contact-us-banner {
+  width: 100%;
+}
+
+.contact-us-form-container {
+  .input-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+
+    label {
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%);
+      left: 15px;
+      padding: 0 5px;
+      background-color: white;
+      color: $bg-color-secondary;
+      font-weight: 700;
+      font-family: "Merriweather", serif;
+      font-size: 16px;
+    }
+
+    img {
+      position: absolute;
+      top: 50%;
+      bottom: 50%;
+      transform: translateY(-50%);
+      left: 10px;
+    }
+  }
+  input {
+    display: inline;
+    width: 100%;
+    border: 2px solid $bg-color-secondary;
+    padding: 25px 5px;
+    padding-left: 50px;
+    border-radius: 5px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    flex-grow: 1;
+    color: #202020;
+
+    &:active {
+      outline: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-family: "Noto Sans", sans-serif;
+      font-size: 16px;
+      color: rgba(32, 32, 32, 80%);
+    }
+
+    @media (min-width: 900px) {
+      font-size: 20px;
+
+      &::placeholder {
+        font-size: 18px;
+      }
+    }
+  }
+}
