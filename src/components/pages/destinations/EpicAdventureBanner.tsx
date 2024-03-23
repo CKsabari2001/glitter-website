@@ -4,8 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 // MUI
 import { useMediaQuery, Typography } from "@mui/material/";
-
-// Styled MUI
+import { Link } from "react-router-dom";
 
 function EpicAdventureBanner() {
   const md = useMediaQuery("(min-width:900px)");
@@ -77,33 +76,35 @@ function EpicAdventureBanner() {
         {SliderArr.map((item, index) => (
           <div key={index} className={`epic-adventure-slider-item`}>
             <img src={item.url} alt="" className={`slider-img`} />
-            <Typography
-              variant="h3"
-              component="h4"
-              sx={{
-                textAlign: "center",
-                fontSize: md ? "28px" : "18px",
-                fontWeight: "700",
-                fontFamily: "'Merriweather', serif;",
-                color: "#202020",
-              }}
-            >
-              {item.title}
-            </Typography>
-            <Typography
-              variant="h3"
-              component="h5"
-              sx={{
-                textAlign: "center",
-                fontSize: md ? "28px" : "18px !important",
-                fontWeight: "400",
-                color: "#202020",
-                fontFamily: "'Merriweather', serif;",
-                pt: md ? 2 : 1,
-              }}
-            >
-              {item.price}
-            </Typography>
+            <Link to={"/destinations-details"}>
+              <Typography
+                variant="h3"
+                component="h4"
+                sx={{
+                  textAlign: "center",
+                  fontSize: md ? "28px" : "18px",
+                  fontWeight: "700",
+                  fontFamily: "'Merriweather', serif;",
+                  color: "#202020",
+                }}
+              >
+                {item.title}
+              </Typography>
+              <Typography
+                variant="h3"
+                component="h5"
+                sx={{
+                  textAlign: "center",
+                  fontSize: md ? "28px" : "18px !important",
+                  fontWeight: "400",
+                  color: "#202020",
+                  fontFamily: "'Merriweather', serif;",
+                  pt: md ? 2 : 1,
+                }}
+              >
+                {item.price}
+              </Typography>
+            </Link>
           </div>
         ))}
       </Slider>

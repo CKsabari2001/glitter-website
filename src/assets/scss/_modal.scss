@@ -1,0 +1,194 @@
+// Use
+@use "./abstracts/breakpoints.scss" as *;
+@use "./abstracts/colors" as *;
+
+// Custom Css
+
+.modal-container {
+  padding: 0;
+  margin: 0px 30px;
+  .img-container {
+    position: relative;
+    background-color: $bg-color-secondary;
+    height: 100%;
+    display: none;
+
+    @media (min-width: 600px) {
+      display: block;
+    }
+
+    .modal-logo {
+      width: 90px;
+      position: absolute;
+      top: 4%;
+      left: 8%;
+    }
+    .modal-img {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      padding-top: 50px;
+    }
+  }
+
+  .form-container {
+    background-color: $bg-color-primary;
+    padding: 50px 0;
+    position: relative;
+
+    .close-button {
+      position: absolute;
+      top: 3%;
+      right: 4%;
+      background-color: $bg-color-secondary;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      border-radius: 3px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: $text-color-highlight;
+      }
+    }
+
+    .modal-title {
+      font-family: "Merriweather", serif;
+      color: $bg-color-secondary;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .modal-paragraph {
+      font-family: "Noto Sans", sans-serif;
+      color: #202020;
+      text-align: center;
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .input-container {
+      position: relative;
+      width: 100%;
+      display: flex;
+
+      label {
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+        left: 15px;
+        padding: 0 5px;
+        background-color: #fff8e1;
+        color: $bg-color-secondary;
+        font-weight: 700;
+        font-family: "Merriweather", serif;
+        font-size: 14px;
+      }
+
+      img {
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+        width: 20px;
+      }
+    }
+    input {
+      display: inline;
+      width: 100%;
+      border: 2px solid $bg-color-secondary;
+      padding: 15px 5px;
+      padding-left: 50px;
+      border-radius: 5px;
+      font-family: "Noto Sans", sans-serif;
+      font-size: 16px;
+      flex-grow: 1;
+      color: #202020;
+      background-color: #fff8e1;
+
+      &:active {
+        outline: none;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 14px;
+        color: rgba(32, 32, 32, 80%);
+      }
+    }
+
+    .modal-checkbox {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a {
+        font-family: "Noto Sans", sans-serif;
+        font-size: 16px;
+        color: #202020;
+        text-decoration: none;
+
+        &:hover {
+          color: $bg-color-secondary;
+        }
+      }
+
+      .checkbox-container {
+        display: flex;
+
+        label {
+          position: relative;
+          flex-grow: 1;
+          font-family: "Noto Sans", sans-serif;
+          font-size: 16px;
+        }
+
+        input {
+          width: auto;
+          flex-grow: 0;
+          margin-right: 10px;
+          border: 1px solid #fff;
+        }
+      }
+    }
+
+    .login-with {
+      .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+
+        img {
+          padding: 0 20px;
+
+          width: 40px;
+        }
+      }
+
+      .modal-paragraph a {
+        font-family: "Noto Sans", sans-serif;
+        color: #202020;
+        text-decoration: none;
+
+        &:hover {
+          color: $bg-color-secondary;
+        }
+      }
+    }
+  }
+}
+
+.css-1ct5x3k-MuiTypography-root {
+  font-size: 14px !important;
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+  color: $bg-color-secondary !important;
+}

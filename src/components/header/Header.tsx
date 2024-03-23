@@ -19,13 +19,26 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 // Components
 import { CustomAppBar } from "../styled/Styled";
 import MobileHeaderMenu from "./MobileHeaderMenu";
+
+import LoginForm from "./LoginForm";
+import SignupForm from "./SignupForm";
+
 function Header() {
   const isNavOpen = useMediaQuery("(max-width:899px)");
 
   const [open, setOpen] = React.useState(false);
+  const [openLogin, setOpenLogin] = React.useState(false);
+  const [opensignup, setOpensignup] = React.useState(false);
 
   function toggleDrawer(value: boolean) {
     setOpen(value);
+  }
+
+  function loginHandler() {
+    setOpenLogin((val) => !val);
+  }
+  function signupHandler() {
+    setOpensignup((val) => !val);
   }
 
   return (
@@ -119,14 +132,17 @@ function Header() {
                   </NavLink>
                 </Stack>
                 <Stack direction="row" spacing={2} className="menu-list">
-                  <a href="">Login</a>
-                  <a href="">Sign up</a>
+                  <a onClick={() => loginHandler()}>Login</a>
+                  <a onClick={() => signupHandler()}>Sign up</a>
                 </Stack>
               </div>
             </Toolbar>
           </CustomAppBar>
           <MobileHeaderMenu toggleDrawer={toggleDrawer} open={open} />
         </Box>
+
+        <LoginForm openLogin={openLogin} loginHandler={loginHandler} />
+        <SignupForm opensignup={opensignup} signupHandler={signupHandler} />
       </div>
     </>
   );

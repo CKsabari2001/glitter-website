@@ -91,7 +91,7 @@ function Footer({ isHomePage }: { isHomePage: boolean }) {
             component="h6"
             sx={{
               fontWeight: "700",
-              color: "#FFC107",
+              color: "#FFC107 !important",
               fontFamily: "'Merriweather', serif;",
             }}
           >
@@ -101,7 +101,7 @@ function Footer({ isHomePage }: { isHomePage: boolean }) {
             variant="body1"
             component="p"
             sx={{
-              color: "#ffffff",
+              color: "#ffffff !important",
               pt: 3,
             }}
           >
@@ -115,7 +115,7 @@ function Footer({ isHomePage }: { isHomePage: boolean }) {
             variant="body1"
             component="p"
             sx={{
-              color: "#ffffff",
+              color: "#ffffff !important",
               pt: 2,
             }}
           >
@@ -151,7 +151,7 @@ function Footer({ isHomePage }: { isHomePage: boolean }) {
               variant="body1"
               component="p"
               sx={{
-                color: "#ffffff",
+                color: "#ffffff !important",
                 pt: 3,
                 textAlign: "center",
               }}
@@ -168,7 +168,7 @@ function Footer({ isHomePage }: { isHomePage: boolean }) {
             component="h6"
             sx={{
               fontWeight: "700",
-              color: "#FFC107",
+              color: "#FFC107 !important",
               fontFamily: "'Merriweather', serif;",
               pb: 3,
               textAlign: "center",

@@ -10,7 +10,7 @@ export const CustomButtonPrimary = styled(Button)(({ theme }) => ({
     fontSize: "18px",
   },
   backgroundColor: "#215732",
-  borderRadius: "0px",
+  borderRadius: "5px",
   padding: "4px 50px",
   textTransform: "capitalize",
   fontSize: "22px",
@@ -24,11 +24,16 @@ export const CustomTypH1 = styled(Typography)(({ theme }) => ({
     fontSize: "26px",
     lineHeight: "2.6rem",
   },
+
+  color: "#202020",
 })) as typeof Typography;
 
 export const CustomTypP = styled(Typography)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     fontSize: "16px",
     lineHeight: "1.8rem",
+    color: "#202020",
   },
+
+  color: "#202020",
 })) as typeof Typography;

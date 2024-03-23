@@ -1,0 +1,99 @@
+// Use
+@use "./abstracts/breakpoints.scss" as *;
+@use "./abstracts/colors" as *;
+
+// Custom Css
+
+.dd-banner {
+  display: flex;
+  justify-content: center;
+}
+
+.dd-banner-content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.bg-color {
+  background-color: $bg-color-primary;
+  filter: blur(25px);
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.bestspot-container {
+  padding-top: 50px;
+
+  .bestspot-img {
+    width: 100%;
+  }
+
+  .bestspot-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 1200px) {
+      justify-content: start;
+    }
+  }
+  a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: #202020;
+
+    img {
+      position: absolute;
+      width: 30px;
+      z-index: 0;
+      left: -4px;
+      top: 50%;
+      bottom: 50%;
+      transform: translateY(-50%);
+    }
+
+    p {
+      z-index: 1;
+      position: relative;
+    }
+  }
+}
+
+.booknow-container {
+  background-color: $bg-color-primary;
+  padding: 50px;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+  img {
+    width: 100%;
+  }
+}
+
+.dd-list-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  column-gap: 15px;
+  background-color: $bg-color-primary;
+  padding: 10px 0;
+  padding-left: 10px;
+  padding-right: 30px;
+  border-radius: 50px;
+
+  img {
+    width: 50px;
+    justify-items: start;
+  }
+
+  h3 {
+    flex-grow: 1;
+  }
+}
