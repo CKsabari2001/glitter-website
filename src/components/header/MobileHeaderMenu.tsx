@@ -49,9 +49,15 @@ export default function MobileHeaderMenu(drawerProps: Props) {
     { listName: "Sign up", function: signupHandler },
   ];
 
+  const screenHeight = window.innerHeight;
+
   const DrawerList = (
     <>
-      <Box className="mobile-menu" role="presentation">
+      <Box
+        className="mobile-menu"
+        role="presentation"
+        sx={{ height: screenHeight }}
+      >
         <CloseIcon className="close-icon" onClick={() => toggleDrawer(false)} />
         <div className="menu-list">
           <a href="#">
