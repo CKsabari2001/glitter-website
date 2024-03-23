@@ -1,3 +1,5 @@
+import React from "react";
+
 // MUI
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
@@ -14,6 +16,9 @@ import Stack from "@mui/material/Stack";
 // React Router
 import { NavLink } from "react-router-dom";
 
+// Components
+import LoginForm from "./LoginForm";
+import SignupForm from "./SignupForm";
 interface Props {
   open: boolean;
   toggleDrawer: (value: boolean) => void;
@@ -22,11 +27,26 @@ interface Props {
 export default function MobileHeaderMenu(drawerProps: Props) {
   const { open, toggleDrawer } = drawerProps;
 
+  const [openLogin, setOpenLogin] = React.useState(false);
+  const [opensignup, setOpensignup] = React.useState(false);
+
+  function loginHandler() {
+    setOpenLogin((val) => !val);
+  }
+  function signupHandler() {
+    setOpensignup((val) => !val);
+  }
+
   const menuListArr = [
     { listName: "Home", link: "/" },
     { listName: "Destination", link: "/destinations" },
     { listName: "About Us", link: "/about-us" },
     { listName: "Contact Us", link: "/contact-us" },
+  ];
+
+  const testarr = [
+    { listName: "Login", function: loginHandler },
+    { listName: "Sign up", function: signupHandler },
   ];
 
   const DrawerList = (
@@ -51,10 +71,10 @@ export default function MobileHeaderMenu(drawerProps: Props) {
           ))}
         </List>
         <List>
-          {["Login", "Sign Up"].map((text) => (
-            <ListItem key={text} disablePadding>
+          {testarr.map((obj, i) => (
+            <ListItem key={i} disablePadding>
               <ListItemButton sx={{ "&:hover": { bgcolor: "#ffffff" } }}>
-                <a href="#">{text}</a>
+                <a onClick={() => obj.function()}>{obj.listName}</a>
               </ListItemButton>
             </ListItem>
           ))}
@@ -86,6 +106,9 @@ export default function MobileHeaderMenu(drawerProps: Props) {
           </Stack>
         </Box>
       </div>
+
+      <LoginForm openLogin={openLogin} loginHandler={loginHandler} />
+      <SignupForm opensignup={opensignup} signupHandler={signupHandler} />
     </Box>
   );
 
