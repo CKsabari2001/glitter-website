@@ -1,5 +1,6 @@
 // Use
 @use "./abstracts/breakpoints.scss" as *;
+@use "./abstracts/colors.scss" as *;
 
 // Imports
 @import "./header.scss";
@@ -7,6 +8,8 @@
 @import "./home.scss";
 @import "./destinations.scss";
 @import "./contactUs.scss";
+@import "./modal.scss";
+@import "./destinationsDetails.scss";
 
 // Google Fonts
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
@@ -22,5 +25,21 @@ body {
 
   @include break-points(md) {
     font-size: 18px;
+  }
+}
+
+.notfound-btn {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  background-color: $bg-color-secondary;
+  padding: 15px 50px;
+  border-radius: 10px;
+  margin-top: 2rem;
+
+  &:hover {
+    background-color: $text-color-highlight;
   }
 }

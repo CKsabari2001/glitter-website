@@ -39,6 +39,7 @@
 }
 .pc-menu .menu-list a:hover {
   color: #ffc107;
+  cursor: pointer;
 }
 @media (min-width: 900px) {
   .pc-menu {
@@ -303,6 +304,9 @@
 .epic-adventure-slider {
   margin-top: 50px;
   margin-bottom: 120px;
+}
+.epic-adventure-slider a {
+  text-decoration: none;
 }
 .epic-adventure-slider .slick-slide > div {
   margin: 0 10px;
@@ -589,6 +593,11 @@
   font-family: "Merriweather", serif;
   font-size: 16px;
 }
+@media (min-width: 900px) {
+  .contact-us-form-container .input-container label {
+    font-size: 18px;
+  }
+}
 .contact-us-form-container .input-container img {
   position: absolute;
   top: 50%;
@@ -628,6 +637,261 @@
   }
 }
 
+.modal-container {
+  padding: 0;
+  margin: 0px 30px;
+}
+.modal-container .img-container {
+  position: relative;
+  background-color: #215732;
+  height: 100%;
+  display: none;
+}
+@media (min-width: 600px) {
+  .modal-container .img-container {
+    display: block;
+  }
+}
+.modal-container .img-container .modal-logo {
+  width: 90px;
+  position: absolute;
+  top: 4%;
+  left: 8%;
+}
+.modal-container .img-container .modal-img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding-top: 50px;
+}
+.modal-container .form-container {
+  background-color: #fff8e1;
+  padding: 50px 0;
+  position: relative;
+}
+.modal-container .form-container .close-button {
+  position: absolute;
+  top: 3%;
+  right: 4%;
+  background-color: #215732;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 3px;
+}
+.modal-container .form-container .close-button:hover {
+  cursor: pointer;
+  background-color: #ffc107;
+}
+.modal-container .form-container .modal-title {
+  font-family: "Merriweather", serif;
+  color: #215732;
+  text-align: center;
+  font-size: 40px;
+}
+.modal-container .form-container .modal-paragraph {
+  font-family: "Noto Sans", sans-serif;
+  color: #202020;
+  text-align: center;
+  margin: 0;
+  font-size: 16px;
+}
+.modal-container .form-container .input-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.modal-container .form-container .input-container label {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  left: 15px;
+  padding: 0 5px;
+  background-color: #fff8e1;
+  color: #215732;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+  font-size: 14px;
+}
+.modal-container .form-container .input-container img {
+  position: absolute;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  width: 20px;
+}
+.modal-container .form-container input {
+  display: inline;
+  width: 100%;
+  border: 2px solid #215732;
+  padding: 15px 5px;
+  padding-left: 50px;
+  border-radius: 5px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  flex-grow: 1;
+  color: #202020;
+  background-color: #fff8e1;
+}
+.modal-container .form-container input:active {
+  outline: none;
+}
+.modal-container .form-container input:focus {
+  outline: none;
+}
+.modal-container .form-container input::placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  color: rgba(32, 32, 32, 0.8);
+}
+.modal-container .form-container .modal-checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-container .form-container .modal-checkbox a {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  color: #202020;
+  text-decoration: none;
+}
+.modal-container .form-container .modal-checkbox a:hover {
+  color: #215732;
+}
+.modal-container .form-container .modal-checkbox .checkbox-container {
+  display: flex;
+}
+.modal-container .form-container .modal-checkbox .checkbox-container label {
+  position: relative;
+  flex-grow: 1;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+}
+.modal-container .form-container .modal-checkbox .checkbox-container input {
+  width: auto;
+  flex-grow: 0;
+  margin-right: 10px;
+  border: 1px solid #fff;
+}
+.modal-container .form-container .login-with .social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.modal-container .form-container .login-with .social-icons img {
+  padding: 0 20px;
+  width: 40px;
+}
+.modal-container .form-container .login-with .modal-paragraph a {
+  font-family: "Noto Sans", sans-serif;
+  color: #202020;
+  text-decoration: none;
+}
+.modal-container .form-container .login-with .modal-paragraph a:hover {
+  color: #215732;
+}
+
+.css-1ct5x3k-MuiTypography-root {
+  font-size: 14px !important;
+}
+
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+  color: #215732 !important;
+}
+
+.dd-banner {
+  display: flex;
+  justify-content: center;
+}
+
+.dd-banner-content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.bg-color {
+  background-color: #fff8e1;
+  filter: blur(25px);
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.bestspot-container {
+  padding-top: 50px;
+}
+.bestspot-container .bestspot-img {
+  width: 100%;
+}
+.bestspot-container .bestspot-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .bestspot-container .bestspot-list-container {
+    justify-content: start;
+  }
+}
+.bestspot-container a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #202020;
+}
+.bestspot-container a img {
+  position: absolute;
+  width: 30px;
+  z-index: 0;
+  left: -4px;
+  top: 50%;
+  bottom: 50%;
+  transform: translateY(-50%);
+}
+.bestspot-container a p {
+  z-index: 1;
+  position: relative;
+}
+
+.booknow-container {
+  background-color: #fff8e1;
+  padding: 50px;
+  border-top-left-radius: 45%;
+  border-top-right-radius: 45%;
+}
+.booknow-container img {
+  width: 100%;
+}
+
+.dd-list-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  column-gap: 15px;
+  background-color: #fff8e1;
+  padding: 10px 0;
+  padding-left: 10px;
+  padding-right: 30px;
+  border-radius: 50px;
+}
+.dd-list-container img {
+  width: 50px;
+  justify-items: start;
+}
+.dd-list-container h3 {
+  flex-grow: 1;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -640,6 +904,21 @@ body {
   body {
     font-size: 18px;
   }
+}
+
+.notfound-btn {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  background-color: #215732;
+  padding: 15px 50px;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+.notfound-btn:hover {
+  background-color: #ffc107;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -12,32 +12,32 @@ const contactFormArr = [
   {
     label: "Name",
     PlaceHolder: "enter your name",
-    iconUrl: "/public/icons/user.svg",
+    iconUrl: "/icons/user.svg",
   },
   {
     label: "City",
     PlaceHolder: "city of residence",
-    iconUrl: "/public/icons/city.svg",
+    iconUrl: "/icons/city.svg",
   },
   {
     label: "Email id",
     PlaceHolder: "enter your email id",
-    iconUrl: "/public/icons/email.svg",
+    iconUrl: "/icons/email.svg",
   },
   {
     label: "Whatsapp Number",
     PlaceHolder: "enter whatsapp number",
-    iconUrl: "/public/icons/whatsapp.svg",
+    iconUrl: "/icons/whatsapp.svg",
   },
   {
     label: "Travel Destination",
     PlaceHolder: "enter travel destination",
-    iconUrl: "/public/icons/destination.svg",
+    iconUrl: "/icons/destination.svg",
   },
   {
     label: "Date of Travel",
     PlaceHolder: "select date of travel",
-    iconUrl: "/public/icons/date.svg",
+    iconUrl: "/icons/date.svg",
   },
 ];
 

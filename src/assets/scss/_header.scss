@@ -44,6 +44,7 @@
 
     &:hover {
       color: $text-color-highlight;
+      cursor: pointer;
     }
   }
   @include break-points(md) {
