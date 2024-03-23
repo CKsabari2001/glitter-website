@@ -50,66 +50,68 @@ export default function MobileHeaderMenu(drawerProps: Props) {
   ];
 
   const DrawerList = (
-    <Box className="mobile-menu" role="presentation">
-      <CloseIcon className="close-icon" onClick={() => toggleDrawer(false)} />
-      <div className="menu-list">
-        <a href="#">
-          <img src="/images/glitter-logo.png" alt="" className="menu-logo" />
-        </a>
-        <List>
-          {menuListArr.map((obj) => (
-            <ListItem key={obj.listName} disablePadding>
-              <ListItemButton sx={{ "&:hover": { bgcolor: "#ffffff" } }}>
-                <NavLink
-                  to={obj.link}
-                  className={({ isActive }) => (isActive ? "active" : "")}
-                >
-                  {obj.listName}
-                </NavLink>
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-        <List>
-          {testarr.map((obj, i) => (
-            <ListItem key={i} disablePadding>
-              <ListItemButton sx={{ "&:hover": { bgcolor: "#ffffff" } }}>
-                <a onClick={() => obj.function()}>{obj.listName}</a>
-              </ListItemButton>
-            </ListItem>
-          ))}
-        </List>
-      </div>
-      <div className="menu-footer">
-        <Box>
-          <Stack direction="row" spacing={2} className="social-icons">
-            <a href="#">
-              <span>
-                <InstagramIcon />
-              </span>
-            </a>
-            <a href="#">
-              <span>
-                <FacebookOutlinedIcon />
-              </span>
-            </a>
-            <a href="#">
-              <span>
-                <YouTubeIcon />
-              </span>
-            </a>
-            <a href="#">
-              <span>
-                <TwitterIcon />
-              </span>
-            </a>
-          </Stack>
-        </Box>
-      </div>
+    <>
+      <Box className="mobile-menu" role="presentation">
+        <CloseIcon className="close-icon" onClick={() => toggleDrawer(false)} />
+        <div className="menu-list">
+          <a href="#">
+            <img src="/images/glitter-logo.png" alt="" className="menu-logo" />
+          </a>
+          <List>
+            {menuListArr.map((obj) => (
+              <ListItem key={obj.listName} disablePadding>
+                <ListItemButton sx={{ "&:hover": { bgcolor: "#ffffff" } }}>
+                  <NavLink
+                    to={obj.link}
+                    className={({ isActive }) => (isActive ? "active" : "")}
+                  >
+                    {obj.listName}
+                  </NavLink>
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+          <List>
+            {testarr.map((obj, i) => (
+              <ListItem key={i} disablePadding>
+                <ListItemButton sx={{ "&:hover": { bgcolor: "#ffffff" } }}>
+                  <a onClick={() => obj.function()}>{obj.listName}</a>
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
+        </div>
+        <div className="menu-footer">
+          <Box>
+            <Stack direction="row" spacing={2} className="social-icons">
+              <a href="#">
+                <span>
+                  <InstagramIcon />
+                </span>
+              </a>
+              <a href="#">
+                <span>
+                  <FacebookOutlinedIcon />
+                </span>
+              </a>
+              <a href="#">
+                <span>
+                  <YouTubeIcon />
+                </span>
+              </a>
+              <a href="#">
+                <span>
+                  <TwitterIcon />
+                </span>
+              </a>
+            </Stack>
+          </Box>
+        </div>
+      </Box>
 
       <LoginForm openLogin={openLogin} loginHandler={loginHandler} />
       <SignupForm opensignup={opensignup} signupHandler={signupHandler} />
-    </Box>
+    </>
   );
 
   return (
