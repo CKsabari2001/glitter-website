@@ -2,6 +2,10 @@
 
 Welcome to Glitter Website! This React-based front-end project offers a responsive and mobile-friendly experience, enhanced with Mui components for superior user interaction. Glitter Website is designed to provide users with an attractive and functional platform for exploring destinations, featuring a captivating home banner section, engaging footer, and dedicated destination detail page for seamless navigation and access to essential information.
 
+## Demo
+
+Check out the live demo of the Glitter Website - https://cksabari2001-glitter-website.netlify.app
+
 ## Key Features
 
 - **Login Form**: Securely log in to access personalized features and content.
@@ -32,9 +36,6 @@ Welcome to Glitter Website! This React-based front-end project offers a responsi
 
 ![Screenshot 2024-03-24 000637](https://github.com/CKsabari2001/glitter-website/assets/110533554/208f9836-432e-4705-b2c0-8dbc4599275c)
 
-## Demo
-
-Check out the live demo of the Glitter Website - https://cksabari2001-glitter-website.netlify.app
 
 ## Run Locally
 
